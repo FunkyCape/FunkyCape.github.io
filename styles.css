@@ -237,7 +237,7 @@ a.button, button {
 }
 
 
-.blogposts p.date {
+.blogposts p.date, .post p.date {
 	font-weight: 500;
 	font-variant: small-caps;
 	font-size: 1.6rem;
@@ -1491,6 +1491,10 @@ display: inline-block;
 .posts .post {
 
 	margin-bottom:3.6rem;
+}
+
+.post p:first-child {
+	text-indent: 2.1rem;
 }
 
 
