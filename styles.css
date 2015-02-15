@@ -322,11 +322,12 @@ p.quote {
 
 a.read-more {
 	display: inline-block;
-	margin-top:3rem;
+	margin-top:2.1rem;
 	font-family:'AngeliciaPro';
 	font-size: 2.1rem;
 	line-height: 3rem;
 	font-style: italic;
+	text-align: right;
 
 }
 
