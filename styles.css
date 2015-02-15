@@ -644,7 +644,7 @@ background-image:url('img/context.png')
 
 /* Blog */
 
-.post {
+.blogpost .post {
 	width:50%;
 	float:left;
 	padding: 0 4rem;
@@ -654,7 +654,7 @@ background-image:url('img/context.png')
 	border-top:1px solid;
 }
 
-.post:first-of-type {
+.blogpost .post:first-of-type {
 	background:#f5f5f5;
 }
 
@@ -1584,7 +1584,7 @@ p.icon, .hover p.icon {
 
 /* blogpost */
 
-.post {
+.blogpost .post {
 	padding:0 0rem 10rem 0rem;
 	width:100%;
 	float:none;
@@ -1852,7 +1852,7 @@ p.icon, .hover p.icon {
 	margin-bottom:2rem;
 }
 
-.post {
+.blogpost .post {
 	padding:0 1rem 10rem 1rem;
 	width:100%;
 	float:none;
@@ -2058,7 +2058,7 @@ a.button {
 	margin:2rem 0 4rem 1rem;
 }
 
-.post {
+.blogpost .post {
 	padding:0 1.8rem 10rem 1.8rem;
 
 
