@@ -183,7 +183,7 @@ h3 {
 	line-height: 100%;
 }
 
-.servdescr p.small, .servicespage p.small,.casedescr p.small,.blogposts p, .casebody p, .casebody p,.hover p,.case p  {
+.servdescr p.small, .servicespage p.small,.casedescr p.small,.blogposts p, .casebody p, .casebody p,.hover p,.case p, .post p  {
 	font-family:'AngeliciaPro';
 	font-size: 2.1rem;
 	line-height: 3rem;
@@ -383,7 +383,7 @@ header {
 .topbar:after {
 	content: "";
 	display: block;
-	position: relative;
+	position: absolute;
 	top:6rem;
 	width:100%;
 	height:1px;
