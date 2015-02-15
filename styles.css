@@ -255,14 +255,18 @@ p.copyright {
 
 }
 
-.casebody h3 {
+.casebody h3, .post h1 {
 	font-size: 3.6rem;
 	text-transform: none;
 	font-weight: 200;
 	line-height: 100%;
 }
 
-.casebody h4, .post h1 {
+.post h1 {
+	font-size:400;
+}
+
+.casebody h4, {
 
 	font-family: "Avenir";
 	font-size: 3rem;
@@ -270,9 +274,6 @@ p.copyright {
 
 }
 
-.post h1 {
-	margin-bottom:2.1rem;
-}
 
 .legend p{
 	font-family: "Avenir";
@@ -320,6 +321,7 @@ p.quote {
 }
 
 a.read-more {
+	display: inline-block;
 	margin-top:3rem;
 	font-family:'AngeliciaPro';
 	font-size: 2.1rem;
@@ -1634,7 +1636,7 @@ section {
 	margin-bottom:0rem;
 }
 
-.casebody h3, .legend h4 {
+.casebody h3, .legend h4, .post h1 {
 	margin-bottom: 2.4rem;
 } 
 
