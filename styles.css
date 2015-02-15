@@ -315,6 +315,14 @@ p.quote {
 	color:white;
 }
 
+a.read-more {
+	font-family:'AngeliciaPro';
+	font-size: 2.1rem;
+	line-height: 3rem;
+	font-style: italic;
+
+}
+
 /* Typography */
 
 
