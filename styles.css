@@ -923,7 +923,7 @@ section {
 
 }
 
-.casebody h3 {
+.casebody h3, .post h1 {
 	text-indent: 2.1rem;
 	margin-bottom: 3rem;
 	line-height: 100%;
@@ -1637,6 +1637,7 @@ section {
 }
 
 .casebody h3, .legend h4, .post h1 {
+
 	margin-bottom: 2.4rem;
 } 
 
@@ -1897,7 +1898,7 @@ section {
 	margin-bottom:0rem;
 }
 
-.casebody h3 {
+.casebody h3, .post h1 {
 	margin-bottom: 2.4rem;
 } 
 
