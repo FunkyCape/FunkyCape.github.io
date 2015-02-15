@@ -7,11 +7,9 @@ layout: default
     <article class="post">    
       
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <p class="date">
-      {{ post.date | date: "%B %e, %Y" }}
-      </p>
+
       <div class="entry">
-        {{ post.content | truncatewords:120}}
+        {{ post.content | truncatewords:40}}
       </div>
       
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
