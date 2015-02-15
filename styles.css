@@ -262,7 +262,7 @@ p.copyright {
 	line-height: 100%;
 }
 
-.casebody h4 {
+.casebody h4, .post h1 {
 
 	font-family: "Avenir";
 	font-size: 3rem;
