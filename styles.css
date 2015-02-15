@@ -1483,8 +1483,14 @@ display: inline-block;
 
 
 /*Blog*/
+
 .posts {
 	padding-top:7.2rem;
+}
+
+.posts .post {
+
+	margin-bottom:3.6rem;
 }
 
 
