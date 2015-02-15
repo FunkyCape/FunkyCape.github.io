@@ -1,18 +1,194 @@
----
-layout: default
----
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>One page Portfolio</title>
+<link href="reset.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/jquery.color-2.1.2.min.js"></script>
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
+<!--[if lt IE 9]>
+<script src="html5shiv.js"></script>
+<![endif]-->
+
+</head>
+  <body>
+    <header>
+        <div class="topbar" id="loader" style="opacity:0">
+          <div class="container">
+             <a href="#" style="display:block">  <img src="img/logo.png" class="logo"> </a>
+             <nav>
+               <ul id="nav" class="mainnav closed">
+                 <li><a href="services.html">Услуги</a></li>
+                 <li><a href="case one.html">Кейсы</a></li>
+                 <li><a href="blog.html">Блог</a></li>
+                 <li><a href="contact.html">Связаться</a></li>
+                 </ul>
+             </nav>
+             <button id="menubuttn" type="button" role="button" aria-label="Toggle Navigation" class="lines-button x">
+                  <span class="lines"></span>
+               </button>
+          </div>
       </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+        <div class="whitezone">
+        <div class="container cf">
+              <div id="main" class="svgleft cf">
+              <img class="illustration" id="mac" src="img/imac.png" alt="iMac Illustration"/>
+              <svg class="line-drawing" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+   width=100%  viewBox="0 0 250.5 207" xml:space="preserve">
+<path fill="none" stroke="#000000"  d="M82.267,205.672c0,0.003,0,0.038,0,0.379
+  c0,0.697,31.765,0.527,42.733,0.521c10.969,0.007,42.734,0.177,42.734-0.521c0-0.341,0-0.376,0-0.379c0,0.001,0,0,0,0
+  c0-0.003,0-0.028,0-0.237c-10.744,0.474-33.291,0.332-42.475,0.332c-9.185,0-32.056,0-42.993-0.332
+  C82.267,205.644,82.267,205.669,82.267,205.672C82.267,205.672,82.267,205.673,82.267,205.672L82.267,205.672z"/>
+<path fill="none" stroke="#000000"  d="M7.3,180.241h235.401c4.029,0,7.299-3.268,7.299-7.3v-16.034H0v16.034
+  C0,176.973,3.269,180.241,7.3,180.241L7.3,180.241z"/>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M250,7.301C250,3.269,246.73,0,242.701,0H7.3C3.269,0,0,3.269,0,7.301
+  V156.91h250V7.301L250,7.301z"/>
+<path fill="none" stroke="#000000"  d="M125,2.673c0.934,0,1.69,0.757,1.69,1.69
+  c0,0.934-0.757,1.69-1.69,1.69s-1.69-0.756-1.69-1.69C123.31,3.43,124.066,2.673,125,2.673L125,2.673z"/>
+<path fill="none" stroke="#000000"  d="M125,3.511c0.454,0,0.821,0.368,0.821,0.821
+  c0,0.454-0.368,0.822-0.821,0.822s-0.821-0.368-0.821-0.822C124.179,3.878,124.546,3.511,125,3.511L125,3.511z"/>
+<path fill="none" stroke="#000000"  d="M156.939,203.279c-1.506-0.655-3.041-15.131-3.559-23.038H96.619
+  c-0.518,7.907-2.054,22.382-3.557,23.038c-1.847,0.805-10.795,1.657-10.795,2.178c10.937,0.332,33.808,0.332,42.993,0.332
+  c9.185,0,31.731,0.142,42.475-0.332C167.734,204.936,158.785,204.084,156.939,203.279z"/>
+<path fill="none" stroke="#000000"  d="M239.285,145.479H10.715V8.574h228.57V145.479z"/>
+  <path stroke="#2ba0a3" d="M60.703,98.955c3.916,0,7.597,1.524,10.366,4.293c2.769,2.769,4.293,6.45,4.293,10.366s-1.524,7.596-4.293,10.365
+    c-2.769,2.769-6.45,4.294-10.366,4.294c-3.915,0-7.596-1.525-10.365-4.294c-2.768-2.769-4.293-6.449-4.293-10.365
+    s1.525-7.597,4.293-10.366C53.107,100.479,56.788,98.955,60.703,98.955 M60.703,96.217c-9.607,0-17.396,7.789-17.396,17.397
+    c0,9.607,7.789,17.397,17.396,17.397c9.609,0,17.397-7.79,17.397-17.397C78.1,104.005,70.312,96.217,60.703,96.217L60.703,96.217z"
+    />
+  <path stroke="#ee3823" d="M124.989,98.955c3.916,0,7.597,1.524,10.366,4.293c2.769,2.769,4.293,6.45,4.293,10.366s-1.524,7.596-4.293,10.365
+    c-2.769,2.769-6.45,4.294-10.366,4.294c-3.915,0-7.596-1.525-10.364-4.294c-2.769-2.769-4.294-6.449-4.294-10.365
+    s1.525-7.597,4.294-10.366S121.074,98.955,124.989,98.955 M124.989,96.217c-9.607,0-17.397,7.789-17.397,17.397
+    c0,9.607,7.79,17.397,17.397,17.397c9.608,0,17.397-7.79,17.397-17.397C142.386,104.005,134.597,96.217,124.989,96.217
+    L124.989,96.217z"/>
+  <path stroke="#fdb818" d="M189.275,98.955c3.916,0,7.596,1.524,10.363,4.293c2.77,2.769,4.295,6.45,4.295,10.366s-1.525,7.596-4.295,10.365
+    c-2.768,2.769-6.447,4.294-10.363,4.294s-7.598-1.525-10.365-4.294c-2.77-2.769-4.293-6.449-4.293-10.365s1.523-7.597,4.293-10.366
+    C181.678,100.479,185.359,98.955,189.275,98.955 M189.275,96.217c-9.607,0-17.396,7.789-17.396,17.397
+    c0,9.607,7.789,17.397,17.396,17.397s17.396-7.79,17.396-17.397C206.672,104.005,198.883,96.217,189.275,96.217L189.275,96.217z"/>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M48.229,84.18c0,0,20.355-13.035,39.462-13.035
+  c19.106,0,34.105,8.036,44.998-3.571c10.892-11.607,16.606-24.463,30.713-28.213c14.105-3.75,31.248-3.572,37.498-11.607"/>
+</svg>
+             </div>
+             <div class="description" style="display:none">    
+                  <h1> Digital специалист </h1> 
+                  <p> This position perform's a variety of different duties to ensure clients receive comprehensive social media. I will be in charge of establishing and maintaining your online reputation.</p>
+              </div>
+             </div>
+        </div>
+       
+    </header>
+    <div class="about cf">
+              <div class="container cf">
+              <h3> Я продвигаю бизнес в интернете </h3>
+              <p>A digital marketing professional, or Internet marketing specialist, is often responsible for developing the strategy used in marketing a company's product online, utilizing such techniques in the field as social media </p>
+              <a href="#" class="button">узнать больше</a>
+             </div>
+    </div> 
+    <div class="services cf">
+          <h2>Услуги</h2>
+          <a href="#" style="display:block" class="service seo">
+                <div class="no-hover">
+                 <p class="icon">icon</p>
+                 <h3>Поисковое продвижение</h3>
+                 </div> 
+                 <div class="hover off">
+                 <p class="icon">icon</p>
+                 <h3>Поисковое продвижение</h3>
+                 <p >Lorem Ipsum Dolor amet</p>
+                </div>
+          </a>
+          <a href="#" style="display:block" class="service audit">
+                <div class="no-hover">
+                <p class="icon">icon</p>            
+                <h3>Аудит и анализ</h3>
+              </div>
+                <div class="hover off">
+                   <p class="icon">icon</p>
+                   <h3>Аудит и анализ</h3>
+                   <p >Lorem Ipsum Dolor amet</p>
+                </div>
+          </a>
+          <a href="#" style="display:block" class="service context">
+                <div class="no-hover">
+                  <p class="icon">icon</p>
+                  <h3>Контекстная реклама</h3>
+                </div>
+                <div class="hover off">
+                   <p class="icon">icon</p>
+                   <h3>Контекстная реклама</h3>
+                   <p >Lorem Ipsum Dolor amet</p>
+                </div>
+          </a>
+    </div>    
+    <div class="cases cf">
+              <div class="casecont">
+                  <a href="#" class="case">
+                        <p class="black">Case<p>
+                        <h3>Korean Makeup</h3>
+                        <p class="display">Продвижение e-commerce магазина</p> 
+                  </a>
+              </div>
+              <div class="casecont">
+                  <a href="#" class="case">
+                        <p class="black">Case<p>
+                        <h3>Korean Makeup</h3>
+                        <p class="display">Продвижение e-commerce магазина</p> 
+                  </a>
+              </div>
+              <div class="casecont">
+                   <a href="#" class="case">
+                        <p class="black">Case<p>
+                        <h3>Korean Makeup</h3>
+                        <p class="display">Продвижение e-commerce магазина</p> 
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="blogposts cf">
+            <div class="post one cf">
+                  <p class="date">08.01.2014</p>
+                 <a href="#" class="coltransition" style="color:black">
+                  <h3 class="posthead" >Заголовок поста</h3>
+                </a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere lectus blandit risus consectetur, et vehicula justo porttitor. Integer placerat lorem tellus, sed egestas tortor mattis id. Etiam metus turpis, mollis eget porta sit amet, elementum sed enim. Pellentesque a arcu semper, hendrerit odio vel, suscipit turpis. Ut mollis, diam nec fermentum fermentum, odio elit euismod turpis, quis suscipit urna nulla a leo. Donec vel erat tellus.Ut mollis, diam nec fermentum fermentum, odio elit euismod turpis, quis suscipit urna nulla a leo.</p>
+                  <a href="#" class="button"> продолжить чтение</a>
+            </div>
+
+            <div class="post two cf">
+                  <p class="date">08.01.2014</p>
+                 <a href="#" class="coltransition" style="color:black">
+                  <h3 class="posthead">Заголовок поста</h3>
+                </a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere lectus blandit risus consectetur, et vehicula justo porttitor. Integer placerat lorem tellus, sed egestas tortor mattis id. Etiam metus turpis, mollis eget porta sit amet, elementum sed enim. Pellentesque a arcu semper, hendrerit odio vel, suscipit turpis. Ut mollis, diam nec fermentum fermentum, odio elit euismod turpis, quis suscipit urna nulla a leo. Donec vel erat tellus.Ut mollis, diam nec fermentum fermentum, odio elit euismod turpis, quis suscipit urna nulla a leo.</p>
+                   <a href="#" class="button"> продолжить чтение</a>
+            </div>
+      </div>
+      <footer>
+          <div class="contact cf">
+                <a href="contact.html" class="coltransitionwhite cf" >
+                  <h3 style=>Связаться</h3>
+                </a>
+                <a href="#" class="social"><img src="img/googleplus.png"></a>
+                <a href="#" class="social"><img src="img/facebook.png"></a>
+                <a href="#" class="social"><img src="img/twitter.png"></a>
+                <a href="#" class="social"><img src="img/vkontakte.png"></a>
+          </div>
+          <p class="copyright"> Илья Корсунский 2014 &#169. Разработка сайта by /Username/ . </p>    
+      </footer> 
+
+<script src="js/HoversFades'n'otherShit.js"></script>
+<script src="js/svganimations.js"></script>
+
+
+
+  </body>
+
+</html>
+
+
