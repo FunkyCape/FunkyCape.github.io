@@ -271,6 +271,21 @@ p.copyright {
 	line-height: 100%;
 }
 
+.post h2{
+ font-size: 3rem;
+ text-transform: none;
+ line-height: 100%;
+ margin:1.2rem 0 0.9rem 0;
+}
+
+.post h3 {
+font-size: 2.4rem;
+text-transform: none;
+line-height: 100%;
+margin:1.5rem 0 1.2rem 0;
+
+}
+
 .post h1 {
 	font-size:400;
 }
@@ -333,13 +348,18 @@ p.quote, blockquote p {
 	color:white;
 }
 
-a.read-more {
+a.read-more, .inblog.a {
 	display: inline;
 	margin-left: 0.3rem;
 	font-family:'AngeliciaPro';
 	font-size: 2.1rem;
 	line-height: 3rem;
 	font-style: italic;
+}
+
+.inblog a{
+	margin-left:0;
+	border-bottom: dashed 0.3rem black;
 }
 
 /* Typography */
@@ -713,6 +733,8 @@ background-image:url('img/context.png')
 	height:3px;
 	width:2rem;
 }
+
+
 /* Blog */
 
 
@@ -1523,10 +1545,17 @@ display: inline-block;
 	display: none;
 }
 
-.posts .post p:first-child, .post.inblog {
+.posts .post p, .post.inblog {
 	text-indent: 2.1rem;
 }
 
+.inblog p {
+	text-align: justify;
+}
+
+.inblog p:first-of-type {
+	text-align: left;
+}
 
 
 
