@@ -1523,6 +1523,7 @@ display: inline-block;
 	width:80%;
 	display: none;
 	background: black;
+	position: absolute;
 	height: 0.05rem;
 	bottom:-2.1rem;
 	left:-10%;
