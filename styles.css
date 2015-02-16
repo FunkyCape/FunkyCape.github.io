@@ -249,6 +249,7 @@ a.button, button {
 
 }
 .posts .post p.date, .post.inblog p.date {
+
 	margin-bottom: 0.6rem;
 	text-align:left;
 	text-indent: 2.1rem;
@@ -256,6 +257,7 @@ a.button, button {
 
 
 p.copyright {
+
 	font-family: 'Avenir';
 	font-size: 1.6rem;
 	font-weight: 300;
@@ -265,6 +267,7 @@ p.copyright {
 }
 
 .casebody h3, .post h1 {
+
 	font-size: 3.6rem;
 	text-transform: none;
 	font-weight: 200;
@@ -272,6 +275,7 @@ p.copyright {
 }
 
 .inblog.post h2{
+
 font-weight: 200;
  font-size: 3rem;
  text-transform: none;
@@ -281,6 +285,7 @@ font-weight: 200;
 }
 
 .inblog.post h3 {
+
 font-weight: 200;
 font-size: 2.4rem;
 text-transform: none;
@@ -291,6 +296,7 @@ text-indent: 2.1rem;
 }
 
 .post h1 {
+
 	font-size:400;
 }
 
@@ -304,29 +310,35 @@ text-indent: 2.1rem;
 
 
 .legend p{
+
 	font-family: "Avenir";
 	font-weight:400;
 	font-size: 2.1rem;
 }
 
 .legend h4 {
+
 	font-size: 2.4rem;
 }
 
 .legend p.visual{
+
 	font-family: "Avenir";
 	font-weight:200;
 	font-size: 2.4rem;
 }
 
 .casebody li {
+
 	font-family: "Avenir";
 	font-size:2.1rem;
 }
 
 .casebody .results li {
+
 	font-size: 3rem;
 }
+
 
 p.quote, blockquote p {
 	font-family: "MorePro";
@@ -950,6 +962,10 @@ p.display {
 .textcontainer ,.inblog p{
 	margin:0 auto 4.8rem auto;
 	width:92rem;
+}
+
+.inblog p {
+	margin :0 auto 0 auto;
 }
 
 .inblog.post h1,.inblog.post h2,.inblog.post h3 {
