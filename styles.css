@@ -243,9 +243,9 @@ a.button, button {
 	font-variant: small-caps;
 	font-size: 1.6rem;
 	text-transform: lowercase;
-	-webkit-font-feature-settings: 'lnum';
-	-moz-font-feature-settings: 'lnum';
-	-ms-font-feature-settings: 'lnum';
+	-webkit-font-feature-settings: 'onum';
+	-moz-font-feature-settings: 'onum';
+	-ms-font-feature-settings: 'onum';
 
 }
 .posts .post p.date {
@@ -1505,7 +1505,7 @@ display: inline-block;
 .posts .post {
 	position: relative;
 
-	margin-bottom:4.2rem;
+	margin-bottom:6.0rem;
 }
 
 .posts .post .entry :after {
@@ -1514,8 +1514,8 @@ display: inline-block;
 	display: block;
 	background: black;
 	height: 0.05rem;
-	bottom:0;
-	left:10%;
+	bottom:-2.1rem;
+	left:-10%;
 }
 
 .posts .post p:first-child {
