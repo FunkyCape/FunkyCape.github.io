@@ -1513,20 +1513,16 @@ display: inline-block;
 	width:80%;
 	display: block;
 	background: black;
-	position: absolute;
+	position: relative;
 	height: 0.05rem;
-	bottom:-2.1rem;
-	left:-10%;
+	bottom: -1.8rem;
+	left:10%;
 }
 
-.posts .post .entry :after:last-child {
-	content: "";
-	width:80%;
+.posts .post .entry:last-of-type :after {
+
 	display: none;
-	background: black;
-	height: 0.05rem;
-	bottom:-2.1rem;
-	left:-10%;
+
 }
 
 .posts .post p:first-child, .post.inblog {
