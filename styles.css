@@ -1502,8 +1502,19 @@ display: inline-block;
 }
 
 .posts .post {
+	position: relative;
 
 	margin-bottom:4.2rem;
+}
+
+.posts.post :after {
+	content: "";
+	width:80%;
+	display: block;
+	background: black;
+	height: 1px;
+	bottom:0;
+	left:10%;
 }
 
 .post p:first-child {
