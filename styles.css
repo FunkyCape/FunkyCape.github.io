@@ -1566,7 +1566,7 @@ display: inline-block;
 	margin-bottom:6.0rem;
 }
 
-.posts .post .entry :after {
+.entry::after {
 	content: "";
 	width:80%;
 	display: block;
