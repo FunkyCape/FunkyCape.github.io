@@ -248,7 +248,7 @@ a.button, button {
 	-ms-font-feature-settings: 'onum';
 
 }
-.posts .post p.date {
+.posts .post p.date, .post.inblog p.date {
 	margin-bottom: 0.6rem;
 	text-align:left;
 	text-indent: 2.1rem;
@@ -1498,7 +1498,7 @@ display: inline-block;
 
 /*Blog*/
 
-.posts {
+.posts , .post.inblog {
 	padding-top:7.2rem;
 }
 
@@ -1529,7 +1529,7 @@ display: inline-block;
 	left:-10%;
 }
 
-.posts .post p:first-child {
+.posts .post p:first-child, .post.inblog {
 	text-indent: 2.1rem;
 }
 
