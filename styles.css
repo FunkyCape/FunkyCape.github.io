@@ -979,8 +979,7 @@ section {
 
 .post h1 {
 
-	margin-bottom: 0.4rem;
-	padding:0 auto;
+	margin:0 auto 0.4rem auto;
 }
 
 .casebody p.small,{
