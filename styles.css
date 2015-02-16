@@ -364,7 +364,7 @@ p.quote, blockquote p {
 	color:white;
 }
 
-p a.read-more,.inblog. p  a {
+a.read-more {
 	display: inline;
 	margin-left: 0.3rem;
 	font-family:'AngeliciaPro';
@@ -374,6 +374,7 @@ p a.read-more,.inblog. p  a {
 }
 
 .inblog a{
+	font-style: italic;
 	margin-left:0;
 	border-bottom: dashed 0.05rem black;
 }
