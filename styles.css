@@ -276,7 +276,8 @@ font-weight: 200;
  font-size: 3rem;
  text-transform: none;
  line-height: 100%;
- margin:1.2rem 0 0.9rem 0;
+ margin:1.8rem auto 1.2rem auto;
+ text-indent: 2.1rem;
 }
 
 .post h3 {
@@ -284,7 +285,8 @@ font-weight: 200;
 font-size: 2.4rem;
 text-transform: none;
 line-height: 100%;
-margin:1.5rem 0 1.2rem 0;
+margin: 1.5rem auto 1.2rem auto;
+text-indent: 2.1rem;
 
 }
 
@@ -971,7 +973,7 @@ section {
 }
 
 .post h1 {
-
+	padding:0 auto;
 	margin-bottom: 0.4rem;
 }
 
