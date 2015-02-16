@@ -1512,7 +1512,7 @@ display: inline-block;
 	left:10%;
 }
 
-.post p:first-child {
+.posts .post p:first-child {
 	text-indent: 2.1rem;
 }
 
