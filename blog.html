@@ -13,9 +13,8 @@ layout: default
       <p class="date">{{ post.date | date: "%B %e, %Y" }}</p>
       <div class="entry">
         {{ post.content | truncatewords:120}}
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more coltransition">Read More</a>
       </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more coltransition">Read More</a>
       
     </article>
   {% endfor %}

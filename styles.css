@@ -183,7 +183,7 @@ h3 {
 	line-height: 100%;
 }
 
-.servdescr p.small, .servicespage p.small,.casedescr p.small,.blogposts p, .casebody p, .casebody p,.hover p,.case p, .post p  {
+.servdescr p.small, .servicespage p.small,.casedescr p.small,.blogpost p, .casebody p, .casebody p,.hover p,.case p, .post p  {
 	font-family:'AngeliciaPro';
 	font-size: 2.1rem;
 	line-height: 3rem;
@@ -216,7 +216,7 @@ a.button, button {
 	color:white;
 }
 
-.case h3,.blogposts h3,.contact h3 {
+.case h3,.blogpost h3,.contact h3 {
 	display: inline-block;
 	font-weight:300;
 	font-size:3rem;
@@ -237,7 +237,7 @@ a.button, button {
 }
 
 
-.blogposts p.date, .post p.date {
+.blogpost p.date, .post p.date {
 	-webkit-font-feature-settings: 'tnum';
 	-moz-font-feature-settings: 'tnum';
 	-ms-font-feature-settings: 'tnum';
@@ -247,8 +247,7 @@ a.button, button {
 	text-transform: lowercase;
 
 }
-
-.post p.date {
+.posts .post p.date {
 	margin-bottom: 0.6rem;
 	text-align:right;
 }
@@ -662,6 +661,7 @@ background-image:url('img/context.png')
 	margin:4rem 0 0rem 2.2rem;
 }
 
+
 /* header */
 
 /* Blog */
@@ -681,23 +681,23 @@ background-image:url('img/context.png')
 }
 
 
-.blogposts h3 {
+.blogpost h3 {
 	margin-top: 4rem;
 
 }
 
-.blogposts p {
+.blogpost p {
 	margin-top:4rem;
 	margin-bottom:8rem;
 
 }
 
-.blogposts p.date {
+.blogpost p.date {
 	position: relative;
 	margin-bottom:0rem;
 }
 
-.blogposts p.date:after {
+.blogpost p.date:after {
 	position: relative;
 	top:1.8rem;
 	margin:0 auto;
@@ -941,15 +941,12 @@ section {
 	margin-bottom: 0.8rem;
 }
 
-.casebody p.small{
+.casebody p.small,{
 	text-indent: 2.1rem;
 	text-align: justify;
 	clear:left;
 }
 
-.casebody p.small:first-line {
-	padding-right:3rem;
-}
 
 
 .casebody ul {
