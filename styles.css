@@ -238,11 +238,19 @@ a.button, button {
 
 
 .blogposts p.date, .post p.date {
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
 	font-weight: 500;
 	font-variant: small-caps;
 	font-size: 1.6rem;
 	text-transform: lowercase;
 
+}
+
+.post p.date {
+	margin-bottom: 0.6rem;
+	text-align:right;
 }
 
 
@@ -928,7 +936,11 @@ section {
 	text-indent: 2.1rem;
 	margin-bottom: 3rem;
 	line-height: 100%;
+}
 
+.post h1 {
+
+	margin-bottom: 0.8rem;
 }
 
 .casebody p.small{
@@ -1647,7 +1659,7 @@ section {
 	margin-bottom:0rem;
 }
 
-.casebody h3, .legend h4, .post h1 {
+.casebody h3, .legend h4,  {
 
 	margin-bottom: 2.4rem;
 } 
@@ -1909,7 +1921,7 @@ section {
 	margin-bottom:0rem;
 }
 
-.casebody h3, .post h1 {
+.casebody h3,  {
 	margin-bottom: 2.4rem;
 } 
 
