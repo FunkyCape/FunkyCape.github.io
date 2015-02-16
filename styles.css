@@ -1518,6 +1518,16 @@ display: inline-block;
 	left:-10%;
 }
 
+.posts .post .entry :after:last-of-type {
+	content: "";
+	width:80%;
+	display: none;
+	background: black;
+	height: 0.05rem;
+	bottom:-2.1rem;
+	left:-10%;
+}
+
 .posts .post p:first-child {
 	text-indent: 2.1rem;
 }
