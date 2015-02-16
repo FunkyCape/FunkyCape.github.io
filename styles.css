@@ -1519,6 +1519,9 @@ display: inline-block;
 	left:10%;
 }
 
+.posts:after:last-child {
+	display: none;
+}
 
 .posts .post p:first-child, .post.inblog {
 	text-indent: 2.1rem;
