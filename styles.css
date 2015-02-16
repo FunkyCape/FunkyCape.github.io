@@ -271,7 +271,7 @@ p.copyright {
 	line-height: 100%;
 }
 
-.post h2{
+.inblog.post h2{
 font-weight: 200;
  font-size: 3rem;
  text-transform: none;
@@ -280,7 +280,7 @@ font-weight: 200;
  text-indent: 2.1rem;
 }
 
-.post h3 {
+.inblog.post h3 {
 font-weight: 200;
 font-size: 2.4rem;
 text-transform: none;
@@ -358,7 +358,7 @@ a.read-more, .inblog. a {
 	font-family:'AngeliciaPro';
 	font-size: 2.1rem;
 	line-height: 3rem;
-	font-style: italic;
+	font-style:italic;
 }
 
 .inblog a{
@@ -952,6 +952,11 @@ p.display {
 	width:92rem;
 }
 
+.inblog.post h1,.inblog.post h2,.inblog.post h3 {
+
+	width:92rem;
+}
+
 .testimonial .textcontainer {
 	margin-bottom: 0;
 }
@@ -973,8 +978,9 @@ section {
 }
 
 .post h1 {
-	padding:0 auto;
+
 	margin-bottom: 0.4rem;
+	padding:0 auto;
 }
 
 .casebody p.small,{
@@ -1750,7 +1756,7 @@ font-size:1.8rem;
 	width:96%;
 }
 
-.inblog p {
+.inblog p, .inblog.post h1,.inblog.post h2,.inblog.post h3 {
 	width:96%
 }
 
@@ -2003,7 +2009,7 @@ section {
 	width:96%;
 }
 
-.inblog p {
+.inblog p,.inblog.post h1,.inblog.post h2,.inblog.post h3 {
 	width:96%;
 }
 
