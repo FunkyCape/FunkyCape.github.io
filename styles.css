@@ -1556,6 +1556,11 @@ display: inline-block;
 
 /*Blog*/
 
+.comments{
+
+	margin-top: 4.2rem;
+}
+
 .posts , .post.inblog {
 	padding-top:7.2rem;
 }
